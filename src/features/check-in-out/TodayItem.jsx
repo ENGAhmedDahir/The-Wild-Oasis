@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 import Tag from "../../ui/Tag";
 import { Flag } from "../../ui/Flag";
 import Button from "../../ui/Button";
-import { Link } from "react-router-dom";
 import CheckoutButton from "./CheckoutButton";
 
 const StyledTodayItem = styled.li`
@@ -19,61 +20,29 @@ const StyledTodayItem = styled.li`
     border-top: 1px solid var(--color-grey-100);
   }
 
-  /* Tablet */
   @media (max-width: 768px) {
-    grid-template-columns: 7rem 2rem 1fr 6rem 8rem;
-    gap: 0.8rem;
-    font-size: 1.3rem;
-  }
-
-  /* Mobile */
-  @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
     gap: 0.8rem;
-    padding: 1.2rem 0.8rem;
+    padding: 1.2rem 0;
   }
 `;
 
 const Guest = styled.div`
   font-weight: 500;
 `;
-
-const GuestInfo = styled.div`
-  display: none;
-
-  @media (max-width: 640px) {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-`;
-
-const MobileRow = styled.div`
-  display: none;
-
-  @media (max-width: 640px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-`;
-
-const DesktopOnly = styled.div`
-  display: contents;
-
-  @media (max-width: 640px) {
-    display: none;
-  }
-`;
-
 const ButtonWrapper = styled.div`
-  @media (max-width: 640px) {
-    width: 100%;
+  width: 100%;
+  max-width: 9rem;
 
-    button {
-      width: 100%;
-    }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  & > button,
+  & > a {
+    display: inline-block;
+    width: 100%;
   }
 `;
 
@@ -82,30 +51,15 @@ function TodayItem({ activity }) {
 
   return (
     <StyledTodayItem>
-      {/* Desktop Layout */}
-      <DesktopOnly>
-        {status === "unconfirmed" && <Tag type="green">Arriving</Tag>}
-        {status === "checked-in" && <Tag type="blue">Departing</Tag>}
-        <Flag src={guests.countryFlag} alt={`flag of ${guests.country}`} />
-        <Guest>{guests.fullName}</Guest>
-        <div>{numNights} nights</div>
-      </DesktopOnly>
+      {status === "unconfirmed" && <Tag type="green">Arriving</Tag>}
+      {status === "checked-in" && <Tag type="blue">Departing</Tag>}
 
-      {/* Mobile Layout */}
-      <MobileRow>
-        {status === "unconfirmed" && <Tag type="green">Arriving</Tag>}
-        {status === "checked-in" && <Tag type="blue">Departing</Tag>}
-        <div>{numNights} nights</div>
-      </MobileRow>
+      <Flag src={guests.countryFlag} alt={`Flag of ${guests.country}`} />
+      <Guest>{guests.fullName}</Guest>
+      <div>{numNights} nights</div>
 
-      <GuestInfo>
-        <Flag src={guests.countryFlag} alt={`flag of ${guests.country}`} />
-        <Guest>{guests.fullName}</Guest>
-      </GuestInfo>
-
-      {/* Buttons - shown on both layouts */}
       <ButtonWrapper>
-        {status === "unconfirmed" && (
+        {status === "unconfirmed" ? (
           <Button
             size="small"
             variation="primary"
@@ -114,9 +68,8 @@ function TodayItem({ activity }) {
           >
             Check in
           </Button>
-        )}
-        {status === "checked-in" && (
-          <CheckoutButton bookingId={id} size="small" variation="primary" />
+        ) : (
+          <CheckoutButton bookingId={id} />
         )}
       </ButtonWrapper>
     </StyledTodayItem>
