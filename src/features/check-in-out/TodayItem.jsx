@@ -67,6 +67,16 @@ const DesktopOnly = styled.div`
   }
 `;
 
+const ButtonWrapper = styled.div`
+  @media (max-width: 640px) {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+`;
+
 function TodayItem({ activity }) {
   const { id, status, guests, numNights } = activity;
 
@@ -79,19 +89,6 @@ function TodayItem({ activity }) {
         <Flag src={guests.countryFlag} alt={`flag of ${guests.country}`} />
         <Guest>{guests.fullName}</Guest>
         <div>{numNights} nights</div>
-        {status === "unconfirmed" && (
-          <Button
-            size="small"
-            variation="primary"
-            as={Link}
-            to={`/checkin/${id}`}
-          >
-            Check in
-          </Button>
-        )}
-        {status === "checked-in" && (
-          <CheckoutButton bookingId={id} size="small" variation="primary" />
-        )}
       </DesktopOnly>
 
       {/* Mobile Layout */}
@@ -106,19 +103,22 @@ function TodayItem({ activity }) {
         <Guest>{guests.fullName}</Guest>
       </GuestInfo>
 
-      {status === "unconfirmed" && (
-        <Button
-          size="small"
-          variation="primary"
-          as={Link}
-          to={`/checkin/${id}`}
-        >
-          Check in
-        </Button>
-      )}
-      {status === "checked-in" && (
-        <CheckoutButton bookingId={id} size="small" variation="primary" />
-      )}
+      {/* Buttons - shown on both layouts */}
+      <ButtonWrapper>
+        {status === "unconfirmed" && (
+          <Button
+            size="small"
+            variation="primary"
+            as={Link}
+            to={`/checkin/${id}`}
+          >
+            Check in
+          </Button>
+        )}
+        {status === "checked-in" && (
+          <CheckoutButton bookingId={id} size="small" variation="primary" />
+        )}
+      </ButtonWrapper>
     </StyledTodayItem>
   );
 }
