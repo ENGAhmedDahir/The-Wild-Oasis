@@ -69,6 +69,16 @@ Special thanks to Jonas for his outstanding teaching, real-world project structu
 - **Data fetching with React Query**
 - **Authentication workflows**
 - **Dashboard design & UI best practices**
+  
+## 👤 Author
+
+**Ahmed-Dahir Omar**  
+**Full-Stack MERN Developer | React • Next.js • TypeScript • Node.js • MongoDB | Building Modern Web Apps
+
+📫 Email: xuubey.dev@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/ahmed-dahir-omar-7200ba365/
+💻 GitHub: https://github.com/ENGAhmedDahir
+
 
 This course played a major role in shaping the development of **The Wild Oasis**, where I learned and applied these concepts to build a real-world hotel management system project.
 
