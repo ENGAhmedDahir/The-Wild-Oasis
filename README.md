@@ -30,17 +30,6 @@ It helps hotel staff manage daily operations including **cabins, bookings, guest
 
 ---
 
-## ✅ Learning Goals
-
-This project was built to practice:
-
-- **Building real-world production-level systems**
-- **Handling authentication workflows**
-- **Designing clean, reusable UI components**
-- **Implementing advanced reusable patterns such as the _Compound Component Pattern_ to create maintainable and scalable code**
-- **Managing remote/server state with React Query**
-- **Integrating Supabase as a backend service**
-
 
 ## 📸 Screenshots
 
@@ -56,6 +45,32 @@ This project was built to practice:
 ### Check-in  
 ![Check-in](https://github.com/user-attachments/assets/236b62d1-b825-48f4-a597-e8a2f4ccd86c)
 
+## ✅ Learning Goals
+
+This project was built to practice:
+
+- **Building real-world production-level systems**
+- **Handling authentication workflows**
+- **Designing clean, reusable UI components**
+- **Implementing advanced reusable patterns such as the _Compound Component Pattern_ to create maintainable and scalable code**
+- **Managing remote/server state with React Query**
+- **Integrating Supabase as a backend service**
+- 
+## 🚀 Future Improvements
+
+- 🌙 Creating and editing Bookings
+- 📈 Advanced reporting & analytics
+- 📤 Export bookings and invoices to PDF
+
+  
+## 👤 Author
+
+**Ahmed-Dahir Omar**  
+**Full-Stack MERN Developer | React • Next.js • TypeScript • Node.js • MongoDB | Building Modern Web Apps
+
+📫 Email: xuubey.dev@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/ahmed-dahir-omar-7200ba365/
+💻 GitHub: https://github.com/ENGAhmedDahir
 
 ## 🙏 Acknowledgments
 
@@ -69,15 +84,6 @@ Special thanks to Jonas for his outstanding teaching, real-world project structu
 - **Data fetching with React Query**
 - **Authentication workflows**
 - **Dashboard design & UI best practices**
-  
-## 👤 Author
-
-**Ahmed-Dahir Omar**  
-**Full-Stack MERN Developer | React • Next.js • TypeScript • Node.js • MongoDB | Building Modern Web Apps
-
-📫 Email: xuubey.dev@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/ahmed-dahir-omar-7200ba365/
-💻 GitHub: https://github.com/ENGAhmedDahir
 
 
 This course played a major role in shaping the development of **The Wild Oasis**, where I learned and applied these concepts to build a real-world hotel management system project.
