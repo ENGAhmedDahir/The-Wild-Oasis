@@ -55,10 +55,10 @@ This project was built to practice:
 - **Implementing advanced reusable patterns such as the _Compound Component Pattern_ to create maintainable and scalable code**
 - **Managing remote/server state with React Query**
 - **Integrating Supabase as a backend service**
-- 
+  
 ## 🚀 Future Improvements
 
-- 🌙 Creating and editing Bookings
+- ➕ Creating and editing Bookings
 - 📈 Advanced reporting & analytics
 - 📤 Export bookings and invoices to PDF
 
