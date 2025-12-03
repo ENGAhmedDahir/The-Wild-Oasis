@@ -58,7 +58,7 @@ This project was built to practice:
   
 ## 🚀 Future Improvements
 
-- ➕ Creating and editing Bookings
+- ➕ Creating and editing Bookings in the system 
 - 📈 Advanced reporting & analytics
 - 📤 Export bookings and invoices to PDF
 
