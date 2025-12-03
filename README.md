@@ -30,27 +30,45 @@ It helps hotel staff manage daily operations including **cabins, bookings, guest
 
 ---
 
-✅ Learning Goals
+## ✅ Learning Goals
 
 This project was built to practice:
 
-Building real-world system
-
-Handling authentication workflows
-
-Designing clean, reusable UI components
-
-Implementing reusable patterns like the Compound Component Pattern to create reusable, maintainable and scalable code.
-
-Managing remote state with React Query
-
-Integrating Supabase for backend services
-
-📸 Screenshots
-![Dashboard](<img width="1351" height="630" alt="Image" src="https://github.com/user-attachments/assets/45ce6c30-102b-46f0-8f14-3208354491b5" />)
-![Bookings](./screenshots/bookings.png)
-![Cabins](./screenshots/cabins.png)
-![Check-in](./screenshots/checkin.png)
+- **Building real-world production-level systems**
+- **Handling authentication workflows**
+- **Designing clean, reusable UI components**
+- **Implementing advanced reusable patterns such as the _Compound Component Pattern_ to create maintainable and scalable code**
+- **Managing remote/server state with React Query**
+- **Integrating Supabase as a backend service**
 
 
-cd the-wild-oasis
+## 📸 Screenshots
+
+### Dashboard  
+![Dashboard](https://github.com/user-attachments/assets/45ce6c30-102b-46f0-8f14-3208354491b5)
+
+### Bookings  
+![Bookings](https://github.com/user-attachments/assets/ea9fd6ac-361f-4215-b178-88bda6b2642d)
+
+### Cabins  
+![Cabins](https://github.com/user-attachments/assets/ba351dd3-b5bb-4e90-82b1-ff7a0c6c5e4b)
+
+### Check-in  
+![Check-in](https://github.com/user-attachments/assets/236b62d1-b825-48f4-a597-e8a2f4ccd86c)
+
+
+## 🙏 Acknowledgments
+
+This project, **The Wild Oasis**, was inspired and guided by the Udemy course  
+**[The Ultimate React & Next.js Course](https://www.udemy.com/course/the-ultimate-react-course/)** by Jonas Schmedtmann.
+
+Special thanks to Jonas for his outstanding teaching, real-world project structure, and deep explanations of:
+
+- **Modern React & Design Patterns**
+- **Scalable component architecture**
+- **Data fetching with React Query**
+- **Authentication workflows**
+- **Dashboard design & UI best practices**
+
+This course played a major role in shaping the development of **The Wild Oasis**, where I learned and applied these concepts to build a real-world hotel management system project.
+
